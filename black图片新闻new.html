@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/headfooter.css" rel="stylesheet" type="text/css" />
+<link href="css/black_qlpicshow.css" rel="stylesheet" type="text/css" />
+<title>图片新闻--齐鲁网</title>
+<meta name="keywords" content="关键字 " />
+<meta name="description" content="描述" />
+<meta name="generator" content="Iqilu" />
+<meta name="copyright" content="2011 iqilu.com by xiaocong" />
+<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="js/black_Hdphotoshow.js"></script>
+<script type="text/javascript">
+$("document").ready(function(){
+	//_hdPic.dd();
+	qlPicListWidth();
+});
+</script>
+</head>
+<body>
+<!-- 图片新闻body-->
+<!--相册功能-->
+<div class="qbwc picFeatures">
+            <a href="#" title="首页">首页</a>&gt;
+            <a href="#" title="图片专题">图片故事</a>&gt;
+            <a href="#" title="新闻图集">纪念辛亥革命100周年</a>
+        <div class="commentP">
+            <a href="#" class="commentPic">我要评论</a>
+            <a href="#" title="共有0条评论"  class="commentNum">(0)</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#" title="分享到空间">分享到空间</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#" title="转发到微薄">转发到微薄</a>
+        </div>
+</div>
+<!--end 相册功能-->
+<!-- 区块背景-->
+<div class=" qbwc tpxxpicbg">
+<!--图片标题-->
+<div class="qbwc picshowtitle">
+    <h2 id="picshowtitle">标题</h2>
+    <span class="pictitpage" id="pictitpage">(<b>1</b>/20)</span>
+    <span class="pictittime" id="pictittime">2011-10-20 00:53</span>
+</div>
+<!--end 图片标题-->
+
+<!--图片展示区-->
+<div class="qbwc qlPicShow">
+	<!-- 图片-->
+    <div class="qlpicimage">
+        <img src="images/qlloader.gif" id="photod" alt="#" />
+        <i></i>
+    </div>
+    <!-- end 图片-->
+    
+    <!-- 上一张-->
+    <div class="qlpicPrek" id="qlpicPrevtk">
+        <div class="qlpicPre">
+            <a href="javascript:void(0);" title="上一张" id="qlpicPrevt"></a>
+        </div>
+    </div>
+    <!-- end 上一张-->
+    <!-- 下一张-->
+    <div class="qlpicNextk" id="qlpicNexttk">
+        <div class="qlpicNext">
+            <a href="javascript:void(0);" title="下一张" id="qlpicNextt" style="display:block;"></a>
+        </div>
+       	
+    </div>
+    <!--end 下一张-->
+    <div class="tuijiantj" id="endcentuj" style="display:none;">
+    	<div class="tuijiantjtit"><span onclick="javascript:clTuiJian();">关闭</span><h3>大家都在看</h3></div>	
+        <ul class="tuijiantjbod">
+            <li>
+                <a href="#" target="_blank" title="#"><img src="#" width="145" alt="#" /></a>
+                <a href="http://news.qq.com/a/20110818/001178.htm#pref=hdpicture" target="_blank" title="#">高清图：解放军防化兵喷火器使用训练</a>
+            </li>
+            <li>
+                <a href="#" target="_blank" title="#"><img src="#" width="145" alt="#" /></a>
+                <a href="http://news.qq.com/a/20110818/001178.htm#pref=hdpicture" target="_blank" title="#">高清图：解放军防化兵喷火器使用训练</a>
+            </li>
+            <li>
+                <a href="#" target="_blank" title="#"><img src="#" width="145" alt="#" /></a>
+                <a href="http://news.qq.com/a/20110818/001178.htm#pref=hdpicture" target="_blank" title="#">高清图：解放军防化兵喷火器使用训练</a>
+            </li>
+            
+        </ul>
+   		<div class="endfenxiangk tpfenxiangd">
+        <div class="commentP">
+        微薄代码
+        </div>
+        <span class="txt">分享到微薄:</span>
+        </div>
+    </div>
+</div>
+<!--end 图片展示区-->
+
+<!--图片介绍-->
+<div class="qbwc qlpicText">
+    <span id="qlpicText">介绍</span>
+    [<a href="#">详细</a>]
+</div>
+<!--end 图片介绍-->
+
+<div class="qbwc tpfenxiangd">
+<a href="#" title="全屏播放">全屏播放</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#" title="幻灯播放" id="autoplay">幻灯播放</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#" title="查看原图" id="bigpicurl" target="_blank" >查看原图</a>
+</div>
+<!--图片介绍-->
+<!--div class="tqwc qlpicText">
+    <span id="qlpicText">介绍</span>
+    [<a href="#">详细</a>]
+</div-->
+<!--end 图片介绍-->
+<!--相册列表-->
+<div class="tqwc picshowlie mbt20">
+	<!-- 上一图集-->
+    <span class="picshowliePre">
+        <a href="#" title="上一图集名称" class="qlprojec"><img src="images/ceshitupian1.jpg" alt="上一图集名称"  height="75" width="100" /></a>
+        <a href="#" title="上一图集名称">&lt;上一图集</a>
+    </span>
+    <!-- end 上一图集-->
+    <!-- 图片缩略图列表-->
+    <div class="qlpicList">
+    	<span class="qlpicList_Prev"><a href="javascript:void(0);" title="往前" id="qlpicList_Prevt">向上翻页</a></span>
+        <div class="qlpicList_bod">
+        	<div>
+        	<ul class="qlpicList_bodul" id="qlpiclist" style="">
+            	<li> 
+                <a href="images/1339477705372.jpg" title="图片名称1 长图片测试">
+                <img src="http://img1.gtimg.com/3/343/34324/3432439_980x1200_0.jpg" alt="图片介绍 长图片测试" />
+                </a>
+                <i title="2011-10-20 00:53">8月16日</i>
+                </li>
+            	<li>
+                <a href="http://img3.cache.netease.com/photo/0001/2011-05-30/900x600_759P74GJ00AO0001.jpg" title="图片名称2"><img src="images/ceshitupian1.jpg" alt="图片名称" /></a>
+                <i title="2011-10-20 00:53">介绍2</i>
+                </li>
+                <li>
+                <a href="http://img5.iqilu.com/c/u/2013/0129/1359420505528.jpg" title="图片名称3"><img src="images/ceshitupian2.jpg" alt="图片名称" /></a>
+                <i title="2011-10-20 00:53">介绍3</i>
+                </li>
+                <li><a href="images/ceshitupian3.jpg" title="图片名称4"><img src="images/ceshitupian3.jpg" alt="图片名称" /></a><i title="2011-10-20 00:53">介绍4</i></li>
+                <li><a href="images/ceshitupian2.jpg"title="图片名称5"><img src="images/ceshitupian2.jpg" alt="图片名称" /></a><i title="2011-10-20 00:53">介绍5</i></li>
+                <!--li><a href="http://img9.zol.com.cn/desk_pic/big_303/302588.jpg" title="图片名称5"><img src="images/ceshitupian5.jpg" alt="图片名称" /></a><i title="2011-10-20 00:53">介绍6</i></li>
+                <li><a href="http://img3.cache.netease.com/photo/0001/2011-05-30/900x600_759P74GJ00AO0001.jpg" title="图片名称"><img src="images/ceshitupian1.jpg" alt="图片名称" /></a><i title="2011-10-20 00:53">介绍7</i></li>
+                <li><a href="http://img9.zol.com.cn/desk_pic/big_303/302588.jpg" title="图片名称"><img src="http://img9.zol.com.cn/desk_pic/big_303/302588.jpg" alt="图片名称" /></a><i title="2011-10-20 00:53">介绍8</i></li>
+                <li><a href="http://img3.cache.netease.com/photo/0001/2011-05-30/900x600_759P74GJ00AO0001.jpg" title="图片名称"><img src="images/ceshitupian3.jpg" alt="图片名称" /></a><i title="2011-10-20 00:53">介绍9</i></li>
+                <li><a href="#" title="图片名称"><img src="images/ceshitupian.jpg" alt="图片名称" /></a><i>介绍10</i></li>
+                <li><a href="http://img3.cache.netease.com/photo/0001/2011-05-30/900x600_759P74GJ00AO0001.jpg" title="图片名称"><img src="images/ceshitupian4.jpg" alt="图片名称" /></a><i>介绍11</i></li>
+                <li><a href="http://img3.cache.netease.com/photo/0001/2011-05-30/900x600_759P74GJ00AO0001.jpg" title="图片名称"><img src="images/ceshitupian5.jpg" alt="图片名称" /></a><i>介绍12</i></li>
+                <li><a href="http://img3.cache.netease.com/photo/0001/2011-05-30/900x600_759P74GJ00AO0001.jpg" title="图片名称"><img src="images/ceshitupian1.jpg" alt="图片名称" /></a><i>介绍13</i></li>
+                <li><a href="http://img3.cache.netease.com/photo/0001/2011-05-30/900x600_759P74GJ00AO0001.jpg" title="图片名称" ><img src="images/ceshitupian2.jpg" alt="图片名称" /></a><i>介绍1411</i></li-->
+            </ul>
+            </div>
+            <!--滚动条-->
+            <div class="qlscroll" id="qlscroll">
+            <span title="拖动滚动条,快速查看图片" class="gdtan" id="qlscroll_in" style="left:0px;">
+            </span>
+            </div>
+            <!--end 滚动条-->
+        </div>
+        <span class="qlpicList_Next" id="qlpicList_Next"><a href="javascript:void(0);" title="往后" id="qlpicList_Nextt">向上翻页</a></span>
+    </div>
+    <!-- end 图片缩略图列表-->
+    <!--下一图集-->
+    <span class="picshowlieNext">
+        <a href="#" title="下一图集名称" class="qlprojec"><img src="images/ceshitupian1.jpg" alt="上一图集名称" height="75" width="100" /></a>
+        <a href="#" title="下一图集名称">下一图集&gt;</a>
+    </span>
+    <!-- end 下一图集-->
+</div>
+<!--end 相册列表-->
+<!-- end 图片新闻body-->
+<!-- 图片故事-->
+<div class="qbwc">
+	<div class="tpgushi">
+	<!--以下内容需自己排版-->
+	<p>2011年8月10日，第二届海航之翼关爱儿童夏令营在海南兴隆康乐园大酒店正式启动，来自全国的48名无父母照顾儿童在专业老师的陪护下参加了夏令营开营仪式，并将在未来7天的时间里充分天的时间里充分体验轻松快乐的海南之行。天的时间里充分体验轻松快乐的海南之行。体验轻松快乐的海南之行。011年8月10日，第二届海航之翼关爱儿童夏令营在海南兴隆康乐园大酒店正式启动，来自全国的48名无父母照顾儿童在专业老师的陪护下参加了来自全国的48名无父母照顾儿童在专业老师的陪护下参加了来自全国的48名无父母照顾儿童在专业老师的陪护下参加了来自全国的48名无父母照顾儿童在专业老师的陪护下参加了来自全国的48名无父母照顾儿童在专业老师的陪护下参加了</p>
+    <p>2011年8月10日，第二届海航之翼关爱儿童夏令营在海南兴隆康乐园大酒店正式启动，来自全国的48名无父母照顾儿童在专业老师的陪护下参加了夏令营开营仪式，并将在未来7天的时间里充分体验天的时间里充分体验轻松快乐的海南之行。天的时间里充分体验轻松快乐的海南之行。轻松快乐的海南之行。</p>
+    <p>2011年8月10日，第二届海航之翼关爱儿童夏令营在海南兴隆康乐园大酒店正式启动，来自全国的48名无父母照顾儿童在专业老师的陪护下参加了夏令营开营仪式，并将在未来7天的时间里充分体验轻松快乐的海南之行。天的时间里充分体验轻松快乐的海南之行。天的时间里充分体验轻松快乐的海南之行。</p>
+    <!--end 以下内容需自己排版-->
+    </div>
+</div>
+<!--end 图片故事-->
+</div>
+<!--end 区块背景-->
+</body>
+</html>

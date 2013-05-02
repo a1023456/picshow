@@ -1,0 +1,33 @@
+ @charset "utf-8";
+body{
+font-family:"Trebuchet MS",verdana,helvetica,arial,sans-serif;
+margin:0;
+padding:0;
+}
+body, dl,dt,dd,ul,ol,li,p,h2,h3,h4,h5,h6,form,fieldset,table,td,tr,img,select,input,select,input{font-size:12px;}
+ul, ol, dl {
+list-style:none outside none;
+}
+div,form,img,ul,ol,li,dl,dt,dd,label {margin: 0; padding: 0; border:0;}
+table,td,tr,th{font-size:12px;}
+h1,h2,h3,h4,h5,h6{margin:0; padding:0;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+a img, :link img, :visited img, img{}
+.fl{float:left;}
+.fr{float:right;}
+.clearboth{clear: both;}
+.hidden{ overflow:hidden;}
+.bwc{width:970px; margin-left:auto; margin-right:auto; overflow:hidden;zoom:1;}
+.qbwc{ width:950px; margin-left:auto; margin-right:auto; overflow:hidden;zoom:1;}
+.blue {color:#5790c6}
+.juhong{color:#ff6600;}
+.hui{color:#666666;}
+.mbt10{ margin-bottom:10px; overflow:hidden; zoom:1;}
+.mbt15{ margin-bottom:10px; overflow:hidden;}
+.mbt_15{ margin-bottom:15px; overflow:hidden;}
+.mbt20{ margin-bottom:20px; overflow:hidden;}
+.mbt30{ margin-bottom:30px; overflow:hidden;}
+a:focus{outline:0;} 
+.dis{display:block;}
+.undis{ display: none;}
